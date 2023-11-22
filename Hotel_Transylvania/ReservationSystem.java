@@ -64,16 +64,16 @@ public class ReservationSystem {
         // Save reservation data to file
         saveReservationToFile(guestId, name, phoneNumber, roomType, checkInDate, lengthOfStay, totalCost);
 
-        // Close the scanner
+
         scanner.close();
     }
 
-    // Method to generate a unique guest ID
+
     private static int generateGuestId() {
         int latestGuestId = 0;
 
         try (BufferedReader reader = new BufferedReader(new FileReader("reservations.txt"))) {
-            // Read the last line of the file to get the latest guest ID
+
             String line;
             while ((line = reader.readLine()) != null) {
                 if (line.startsWith("Guest ID: ")) {
@@ -81,7 +81,7 @@ public class ReservationSystem {
                 }
             }
         } catch (IOException | NumberFormatException e) {
-            // Ignore and use the default value (0) if an error occurs
+
         }
 
         return latestGuestId + 1;
@@ -104,7 +104,7 @@ public class ReservationSystem {
             writer.write("Check-in Date: " + checkInDate + "\n");
             writer.write("Length of Stay: " + lengthOfStay + " days\n");
             writer.write("Total Cost: $" + totalCost + "\n");
-            writer.write("\n"); // Separate entries with a blank line
+            writer.write("\n");
             System.out.println("Reservation data has been saved to reservations.txt");
         } catch (IOException e) {
             System.err.println("Error writing to file: " + e.getMessage());
