@@ -1,0 +1,24 @@
+Guest ID: 1
+Name: abdulrauf abdi
+Phone Number: 0745964164
+Room Type: Single (Rate per day: $1500)
+Check-in Date: 2000
+Length of Stay: 5 days
+Total Cost: $7500.0
+
+Guest ID: 2
+Name: abdulrauf abdi
+Phone Number: 0745964164
+Room Type: Single (Rate per day: $1500)
+Check-in Date: 1
+Length of Stay: 12 days
+Total Cost: $18000.0
+
+Guest ID: 3
+Name: a
+Phone Number: 2333444432
+Room Type: Single (Rate per day: $1500)
+Check-in Date: 1
+Length of Stay: 43 days
+Total Cost: $64500.0
+
